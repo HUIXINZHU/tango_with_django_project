@@ -1,6 +1,7 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 
+
 # Create your models here.
 class Category(models.Model):
     
@@ -14,6 +15,7 @@ class Category(models.Model):
     
     class Meta:
         verbose_name_plural = 'Categories'
+        
 
 
     def __str__(self):
@@ -28,3 +30,6 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
+
+
+
